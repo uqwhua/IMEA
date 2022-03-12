@@ -1,10 +1,6 @@
 # [Informed Multi-context Entity Alignment (WSDM 2022)](https://arxiv.org/pdf/2201.00304)
-[![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen.svg?style=flat-square)](https://github.com/JadeXIN/IMEA/issues)
-[![language-python3](https://img.shields.io/badge/Language-Python3-blue.svg?style=flat-square)](https://www.python.org/)
-[![made-with-Tensorflow](https://img.shields.io/badge/Made%20with-Tensorflow-orange.svg?style=flat-square)](https://www.tensorflow.org/)
 
-> Entity alignment is a crucial step in integrating knowledge graphs (KGs) from multiple sources. 
-Previous attempts at entity alignment have explored different KG structures, such as neighborhood-based and path-based contexts, to learn entity embeddings, but they are limited in capturing the multi-context features. Moreover, most approaches directly utilize the embedding similarity to determine entity alignment without considering the global interaction among entities and relations. In this work, we propose an Informed Multi-context Entity Alignment (IMEA) model to address these issues. In particular, we introduce Transformer to flexibly capture the relation, path, and neighborhood contexts, and design holistic reasoning to estimate alignment probabilities based on both embedding similarity and the relation/entity functionality. The alignment evidence obtained from holistic reasoning is further injected back into the Transformer via the proposed soft label editing to inform embedding learning. Experimental results on several benchmark datasets demonstrate the superiority of our IMEA model compared with existing state-of-the-art entity alignment methods. 
+> Entity alignment is a crucial step in integrating knowledge graphs (KGs) from multiple sources. Previous attempts at entity alignment have explored different KG structures, such as neighborhood-based and path-based contexts, to learn entity embeddings, but they are limited in capturing the multi-context features. Moreover, most approaches directly utilize the embedding similarity to determine entity alignment without considering the global interaction among entities and relations. In this work, we propose an Informed Multi-context Entity Alignment (IMEA) model to address these issues. In particular, we introduce Transformer to flexibly capture the relation, path, and neighborhood contexts, and design holistic reasoning to estimate alignment probabilities based on both embedding similarity and the relation/entity functionality. The alignment evidence obtained from holistic reasoning is further injected back into the Transformer via the proposed soft label editing to inform embedding learning. Experimental results on several benchmark datasets demonstrate the superiority of our IMEA model compared with existing state-of-the-art entity alignment methods. 
 
 
 ## Overview
@@ -38,7 +34,7 @@ src/
 
 
 #### Usage
-The following is an example about how to run IMEA in Python (We assume that you have already downloaded our [datasets](https://www.dropbox.com/s/hbyzesmz1u7ejdu/OpenEA_dataset.zip?dl=0) and configured the hyperparameters as in the our config file.).)
+The following is an example about how to run IMEA in Python (We assume that you have already downloaded our [datasets](https://www.dropbox.com/s/hbyzesmz1u7ejdu/OpenEA_dataset.zip?dl=0) and configured the hyperparameters as in our config file).
 
 To run the off-the-shelf approaches on our datasets and reproduce our experiments, change into the ./run/ directory and use the following script:
 
