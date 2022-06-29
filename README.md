@@ -1,4 +1,4 @@
-# [Informed Multi-context Entity Alignment (WSDM 2022)](https://arxiv.org/pdf/2201.00304)
+# [Informed Multi-context Entity Alignment (WSDM 2022)](https://dl.acm.org/doi/abs/10.1145/3488560.3498523)
 
 > Entity alignment is a crucial step in integrating knowledge graphs (KGs) from multiple sources. Previous attempts at entity alignment have explored different KG structures, such as neighborhood-based and path-based contexts, to learn entity embeddings, but they are limited in capturing the multi-context features. Moreover, most approaches directly utilize the embedding similarity to determine entity alignment without considering the global interaction among entities and relations. In this work, we propose an Informed Multi-context Entity Alignment (IMEA) model to address these issues. In particular, we introduce Transformer to flexibly capture the relation, path, and neighborhood contexts, and design holistic reasoning to estimate alignment probabilities based on both embedding similarity and the relation/entity functionality. The alignment evidence obtained from holistic reasoning is further injected back into the Transformer via the proposed soft label editing to inform embedding learning. Experimental results on several benchmark datasets demonstrate the superiority of our IMEA model compared with existing state-of-the-art entity alignment methods. 
 
@@ -65,11 +65,13 @@ The datasets can be downloaded from [here](https://www.dropbox.com/s/hbyzesmz1u7
 ## Citation
 If you find the implementation of our model or the experimental results useful, please kindly cite the following paper:
 ```
-@article{xin2022informed,
-  title={Informed Multi-context Entity Alignment},
+@inproceedings{xin2022informed,
+  title={Informed multi-context entity alignment},
   author={Xin, Kexuan and Sun, Zequn and Hua, Wen and Hu, Wei and Zhou, Xiaofang},
-  journal={arXiv preprint arXiv:2201.00304},
-  year={2022}
+  booktitle={Proceedings of the Fifteenth ACM International Conference on Web Search and Data Mining},
+  pages={1197--1205},
+  year={2022}，
+  doi={10.1145/3488560.3498523}
 }
 ```
 
